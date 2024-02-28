@@ -15,13 +15,12 @@ public class App {
     public void start() {
         System.out.println("== 프로그램 시작 ==");
 
-
-
         Scanner sc = new Scanner(System.in);
 
         MemberController memberController = new MemberController(sc);
         ArticleController articleController = new ArticleController(sc);
         articleController.makeTestData();
+        memberController.makeTestData();
 
         while ( true ) {
             System.out.printf("명령어) ");
